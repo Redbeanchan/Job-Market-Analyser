@@ -1,6 +1,6 @@
 # Notebooks - Job Market Analysis
 
-This folder contains the notebook-based workflow for the EGT305 Job Market Analyser project.
+This folder contains the notebook-based workflow for the EGT305 Big Data Job Market Analyser project.
 
 The notebooks are designed for:
 - quick exploratory analysis and write-up (`BDeda.ipynb`)
@@ -18,7 +18,7 @@ Use them to compare non-Spark vs Spark performance and support Parts 2-5 of the 
 
 ## Setup (Windows PowerShell)
 
-From this `Notebooks` folder:
+From this folder (Assuming you have a venv):
 
 ```powershell
 python -m venv .venv
@@ -38,7 +38,7 @@ In Jupyter, select kernel: `Python (job-market-notebooks)`.
 
 ## Data paths
 
-These notebooks expect the assignment CSVs as inputs. Update file paths inside notebook cells if your CSV location is different.
+These notebooks expect the assignment CSVs as inputs which have not been uploaded. Update file paths inside notebook cells if your CSV location is different.
 
 Example source files:
 - `Employee_dataset.csv`
@@ -53,18 +53,3 @@ Example source files:
 ## Spark note
 
 PySpark requires Java (JDK 17 recommended). If Spark fails to start, make sure `JAVA_HOME` is set.
-
-## What to commit from this folder
-
-Recommended:
-- `BDeda.ipynb`
-- `nonspark_cleaning_model.ipynb`
-- `spark_cleaning_model.ipynb`
-- `requirements.txt`
-- `README.md`
-
-Usually do not commit:
-- `.venv/`
-- `.ipynb_checkpoints/`
-- `.html` exports (unless specifically required)
-
